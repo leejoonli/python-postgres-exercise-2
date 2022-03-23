@@ -1,30 +1,31 @@
 from django.shortcuts import render
+# from .serializers import
 # from .models import
 
 # Create your views here.
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
 
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
 
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
 
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
 
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
 
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
 
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
 
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
 
-# class Serializer(serializers.HyperlinkedModelSerializer):
-# class Serializer(serializers.HyperlinkedModelSerializer):
+# class List(generics.ListCreateAPIView):
+# class Detail(generics.RetrieveUpdateDestroyAPIView):
