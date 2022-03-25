@@ -29,7 +29,7 @@ class MovieCastSerializer(serializers.HyperlinkedModelSerializer):
     )
     class Meta:
         model = MovieCast
-        fields = ()
+        fields = ('id', 'role', 'movie', 'movie_id', 'actor', 'actor_id')
 
 # class MovieGenreSerializer(serializers.HyperlinkedModelSerializer):
 #     class Meta:
