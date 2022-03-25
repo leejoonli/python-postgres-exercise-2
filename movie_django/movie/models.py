@@ -24,7 +24,7 @@ class Movie(models.Model):
         return self.title
 
 # movie_cast model
-class MovieCast(models.model):
+class MovieCast(models.Model):
     role = models.CharField(max_length=30)
     actor = models.ForeignKey(Actor, on_delete=models.CASCADE, related_name='movie_cast')
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='movie')
