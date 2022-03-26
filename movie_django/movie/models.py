@@ -32,14 +32,20 @@ class MovieCast(models.Model):
     def __str__(self):
         return self.role
 
-# movie_genre model
+# genre model
 class Genre(models.Model):
     title = models.CharField(max_length=20)
 
     def __str__(self):
         return self.title
 
-# genre model
+# movie_genre model
+class MovieGenre(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='movie')
+    genre = models.ForeignKey(Genre, on_delete=models.CASCADE, related_name='genre')
+
+    def __str__(self):
+        return self.genre
 
 # rating model
 
