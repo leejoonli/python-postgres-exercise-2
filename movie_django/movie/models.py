@@ -33,6 +33,11 @@ class MovieCast(models.Model):
         return self.role
 
 # movie_genre model
+class Genre(models.Model):
+    title = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.title
 
 # genre model
 
