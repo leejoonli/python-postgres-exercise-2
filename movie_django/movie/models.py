@@ -32,14 +32,50 @@ class MovieCast(models.Model):
     def __str__(self):
         return self.role
 
-# movie_genre model
-
 # genre model
+class Genre(models.Model):
+    title = models.CharField(max_length=20)
 
-# rating model
+    def __str__(self):
+        return self.title
+
+# movie_genre model
+class MovieGenre(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='movie')
+    genre = models.ForeignKey(Genre, on_delete=models.CASCADE, related_name='genre')
+
+    def __str__(self):
+        return self.genre
 
 # reviewer model
+class Reviewer(models.Model):
+    name = models.CharField(max_length=30)
 
-# movie_direction model
+    def __str__(self):
+        return self.name
+
+# rating model
+class Rating(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='movie')
+    reviewer = models.ForeignKey(Reviewer, on_delete=models.CASCADE, related_name='reviewer')
+    review_stars = models.IntegerField()
+    num_o_ratings = models.IntegerField()
+
+    def __str__(self):
+        return self.review_stars
 
 # director model
+class Director(models.Model):
+    fname = models.CharField(max_length=20)
+    lname = models.CharField(max_length=20)
+
+    def __str__(self):
+        return f'{self.fname} {self.lname}'
+
+# movie_direction model
+class MovieDirection(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='movie')
+    director = models.ForeignKey(Director, on_delete=models.CASCADE, related_name='director')
+
+    def __str__(self):
+        return self.director
