@@ -47,9 +47,22 @@ class MovieGenre(models.Model):
     def __str__(self):
         return self.genre
 
-# rating model
-
 # reviewer model
+class Reviewer(models.Model):
+    name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.name
+
+# rating model
+class Rating(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='movie')
+    reviewer = models.ForeignKey(Reviewer, on_delete=models.CASCADE, related_name='reviewer')
+    review_stars = models.IntegerField()
+    num_o_ratings = models.IntegerField()
+
+    def __str__(self):
+        return self.review_stars
 
 # movie_direction model
 
